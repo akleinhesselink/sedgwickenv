@@ -19,10 +19,10 @@ scrape_raw_ibutton_file <- function(file, output_dir) {
   ibutton_id <- readLines(con)[2]
   ibutton_id <- stringr::str_split(ibutton_id, pattern = " ")[[1]][4]
   ibutton_id <- rep(ibutton_id, nrow(to_write))
-  plot_id <- str_split(file, "/")[[1]][4] %>% substr(., 6, 8)
-  plot_id <- rep(plot_id, nrow(to_write))
+  plot_id <- sub(pattern = "(.*)\\..*$", replacement = "\\1", basename(file))
   to_write <- cbind(ibutton_id, to_write)
   to_write <- cbind(plot_id, to_write )
-  write.csv(x = to_write, file = paste0(output_dir, ibutton_id[1], ".csv"), 
+  to_write$plot_id <- str_replace( to_write$plot_id, pattern = 'plot_', replacement = '')
+  write.csv(x = to_write, file = paste0(output_dir, ibutton_id[1], ".csv"),
             quote = F, row.names = F)
 }
