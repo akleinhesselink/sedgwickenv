@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Spatial Tapioca Plot Locations</name>
+    <Style id="icon-503-CDDC39-normal">
+      <IconStyle>
+        <color>ff39dccd</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="31" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-503-CDDC39-highlight">
+      <IconStyle>
+        <color>ff39dccd</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="31" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-503-CDDC39">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-503-CDDC39-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-503-CDDC39-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>741.0</name>
+      <description><![CDATA[ID: 2<br>lat: 34.73891001<br>lon: -120.025966<br>ele: 719.13<br>time: 2016-02-06T17:27:21Z<br>magvar: <br>geoidheight: <br>cmt: 741<br>desc: 741]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>2.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.73891001</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.025966</value>
+        </Data>
+        <Data name="ele">
+          <value>719.130127</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T17:27:21Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>741</value>
+        </Data>
+        <Data name="desc">
+          <value>741</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.025966,34.73891001,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>742.0</name>
+      <description><![CDATA[ID: 3<br>lat: 34.73873299<br>lon: -120.025905<br>ele: 727.594<br>time: 2016-02-06T17:28:10Z<br>magvar: <br>geoidheight: <br>cmt: 742<br>desc: 742]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>3.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.73873299</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.025905</value>
+        </Data>
+        <Data name="ele">
+          <value>727.594421</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T17:28:10Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>742</value>
+        </Data>
+        <Data name="desc">
+          <value>742</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.025905,34.73873299,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>743.0</name>
+      <description><![CDATA[ID: 4<br>lat: 34.73857599<br>lon: -120.026285<br>ele: 728.508<br>time: 2016-02-06T17:29:10Z<br>magvar: <br>geoidheight: <br>cmt: 743<br>desc: 743]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>4.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.73857599</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.026285</value>
+        </Data>
+        <Data name="ele">
+          <value>728.508301</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T17:29:10Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>743</value>
+        </Data>
+        <Data name="desc">
+          <value>743</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.026285,34.73857599,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>744.0</name>
+      <description><![CDATA[ID: 5<br>lat: 34.73832403<br>lon: -120.026687<br>ele: 731.887<br>time: 2016-02-06T17:30:22Z<br>magvar: <br>geoidheight: <br>cmt: 744<br>desc: 744]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>5.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.73832403</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.026687</value>
+        </Data>
+        <Data name="ele">
+          <value>731.887329</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T17:30:22Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>744</value>
+        </Data>
+        <Data name="desc">
+          <value>744</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.026687,34.73832403,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>745.0</name>
+      <description><![CDATA[ID: 6<br>lat: 34.73842897<br>lon: -120.026778<br>ele: 729.693<br>time: 2016-02-06T17:30:54Z<br>magvar: <br>geoidheight: <br>cmt: 745<br>desc: 745]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>6.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.73842897</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.026778</value>
+        </Data>
+        <Data name="ele">
+          <value>729.693237</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T17:30:54Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>745</value>
+        </Data>
+        <Data name="desc">
+          <value>745</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.026778,34.73842897,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>746.0</name>
+      <description><![CDATA[ID: 7<br>lat: 34.73848798<br>lon: -120.027191<br>ele: 729.74<br>time: 2016-02-06T17:31:53Z<br>magvar: <br>geoidheight: <br>cmt: 746<br>desc: 746]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>7.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.73848798</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.027191</value>
+        </Data>
+        <Data name="ele">
+          <value>729.740417</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T17:31:53Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>746</value>
+        </Data>
+        <Data name="desc">
+          <value>746</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.027191,34.73848798,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>747.0</name>
+      <description><![CDATA[ID: 8<br>lat: 34.73877104<br>lon: -120.027204<br>ele: 734.364<br>time: 2016-02-06T17:32:54Z<br>magvar: <br>geoidheight: <br>cmt: 747<br>desc: 747]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>8.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.73877104</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.027204</value>
+        </Data>
+        <Data name="ele">
+          <value>734.36377</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T17:32:54Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>747</value>
+        </Data>
+        <Data name="desc">
+          <value>747</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.027204,34.73877104,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>748.0</name>
+      <description><![CDATA[ID: 9<br>lat: 34.73972398<br>lon: -120.026392<br>ele: 732.504<br>time: 2016-02-06T17:35:47Z<br>magvar: <br>geoidheight: <br>cmt: 748<br>desc: 748]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>9.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.73972398</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.026392</value>
+        </Data>
+        <Data name="ele">
+          <value>732.504211</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T17:35:47Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>748</value>
+        </Data>
+        <Data name="desc">
+          <value>748</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.026392,34.73972398,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>749.0</name>
+      <description><![CDATA[ID: 10<br>lat: 34.73954796<br>lon: -120.026177<br>ele: 727.943<br>time: 2016-02-06T17:36:39Z<br>magvar: <br>geoidheight: <br>cmt: 749<br>desc: 749]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>10.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.73954796</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.026177</value>
+        </Data>
+        <Data name="ele">
+          <value>727.943298</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T17:36:39Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>749</value>
+        </Data>
+        <Data name="desc">
+          <value>749</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.026177,34.73954796,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>750.0</name>
+      <description><![CDATA[ID: 11<br>lat: 34.73969498<br>lon: -120.02522<br>ele: 730.728<br>time: 2016-02-06T17:38:16Z<br>magvar: <br>geoidheight: <br>cmt: 750<br>desc: 750]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>11.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.73969498</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.02522</value>
+        </Data>
+        <Data name="ele">
+          <value>730.727844</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T17:38:16Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>750</value>
+        </Data>
+        <Data name="desc">
+          <value>750</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.02522,34.73969498,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>751.0</name>
+      <description><![CDATA[ID: 12<br>lat: 34.73963203<br>lon: -120.024898<br>ele: 728.24<br>time: 2016-02-06T17:39:07Z<br>magvar: <br>geoidheight: <br>cmt: 751<br>desc: 751]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>12.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.73963203</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.024898</value>
+        </Data>
+        <Data name="ele">
+          <value>728.240173</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T17:39:07Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>751</value>
+        </Data>
+        <Data name="desc">
+          <value>751</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.024898,34.73963203,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>752.0</name>
+      <description><![CDATA[ID: 13<br>lat: 34.73905301<br>lon: -120.024731<br>ele: 718.242<br>time: 2016-02-06T17:40:23Z<br>magvar: <br>geoidheight: <br>cmt: 752<br>desc: 752]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>13.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.73905301</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.024731</value>
+        </Data>
+        <Data name="ele">
+          <value>718.242126</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T17:40:23Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>752</value>
+        </Data>
+        <Data name="desc">
+          <value>752</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.024731,34.73905301,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>753.0</name>
+      <description><![CDATA[ID: 14<br>lat: 34.73917002<br>lon: -120.025252<br>ele: 718.787<br>time: 2016-02-06T17:41:32Z<br>magvar: <br>geoidheight: <br>cmt: 753<br>desc: 753]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>14.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.73917002</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.025252</value>
+        </Data>
+        <Data name="ele">
+          <value>718.787354</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T17:41:32Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>753</value>
+        </Data>
+        <Data name="desc">
+          <value>753</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.025252,34.73917002,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>754.0</name>
+      <description><![CDATA[ID: 15<br>lat: 34.73886601<br>lon: -120.025257<br>ele: 716.341<br>time: 2016-02-06T17:42:36Z<br>magvar: <br>geoidheight: <br>cmt: 754<br>desc: 754]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>15.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.73886601</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.025257</value>
+        </Data>
+        <Data name="ele">
+          <value>716.340698</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T17:42:36Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>754</value>
+        </Data>
+        <Data name="desc">
+          <value>754</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.025257,34.73886601,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>755.0</name>
+      <description><![CDATA[ID: 16<br>lat: 34.73864498<br>lon: -120.024957<br>ele: 716.455<br>time: 2016-02-06T17:43:21Z<br>magvar: <br>geoidheight: <br>cmt: 755 FOR REAL<br>desc: 755 FOR REAL]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>16.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.73864498</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.024957</value>
+        </Data>
+        <Data name="ele">
+          <value>716.454895</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T17:43:21Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>755 FOR REAL</value>
+        </Data>
+        <Data name="desc">
+          <value>755 FOR REAL</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.024957,34.73864498,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>756.0</name>
+      <description><![CDATA[ID: 17<br>lat: 34.718832<br>lon: -120.042584<br>ele: 400.306<br>time: 2016-02-06T18:42:29Z<br>magvar: <br>geoidheight: <br>cmt: 756<br>desc: 756]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>17.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.718832</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.042584</value>
+        </Data>
+        <Data name="ele">
+          <value>400.306122</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T18:42:29Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>756</value>
+        </Data>
+        <Data name="desc">
+          <value>756</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.042584,34.718832,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>757.0</name>
+      <description><![CDATA[ID: 18<br>lat: 34.71817897<br>lon: -120.044241<br>ele: 414.694<br>time: 2016-02-06T18:46:03Z<br>magvar: <br>geoidheight: <br>cmt: 757<br>desc: 757]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>18.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.71817897</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.044241</value>
+        </Data>
+        <Data name="ele">
+          <value>414.693665</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T18:46:03Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>757</value>
+        </Data>
+        <Data name="desc">
+          <value>757</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.044241,34.71817897,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>758.0</name>
+      <description><![CDATA[ID: 19<br>lat: 34.71515796<br>lon: -120.050697<br>ele: 436.086<br>time: 2016-02-06T18:52:16Z<br>magvar: <br>geoidheight: <br>cmt: 758<br>desc: 758]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>19.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.71515796</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.050697</value>
+        </Data>
+        <Data name="ele">
+          <value>436.085938</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T18:52:16Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>758</value>
+        </Data>
+        <Data name="desc">
+          <value>758</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.050697,34.71515796,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>759.0</name>
+      <description><![CDATA[ID: 20<br>lat: 34.71251104<br>lon: -120.048012<br>ele: 409.443<br>time: 2016-02-06T19:00:46Z<br>magvar: <br>geoidheight: <br>cmt: 759<br>desc: 759]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>20.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.71251104</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.048012</value>
+        </Data>
+        <Data name="ele">
+          <value>409.443451</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T19:00:46Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>759</value>
+        </Data>
+        <Data name="desc">
+          <value>759</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.048012,34.71251104,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>760.0</name>
+      <description><![CDATA[ID: 21<br>lat: 34.70318399<br>lon: -120.037028<br>ele: 363.005<br>time: 2016-02-06T21:12:31Z<br>magvar: <br>geoidheight: <br>cmt: 760<br>desc: 760]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>21.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.70318399</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.037028</value>
+        </Data>
+        <Data name="ele">
+          <value>363.004944</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T21:12:31Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>760</value>
+        </Data>
+        <Data name="desc">
+          <value>760</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.037028,34.70318399,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>761.0</name>
+      <description><![CDATA[ID: 22<br>lat: 34.70362396<br>lon: -120.037024<br>ele: 361.251<br>time: 2016-02-06T21:13:52Z<br>magvar: <br>geoidheight: <br>cmt: 761<br>desc: 761]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>22.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.70362396</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.037024</value>
+        </Data>
+        <Data name="ele">
+          <value>361.251099</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T21:13:52Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>761</value>
+        </Data>
+        <Data name="desc">
+          <value>761</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.037024,34.70362396,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>762.0</name>
+      <description><![CDATA[ID: 23<br>lat: 34.69736<br>lon: -120.049628<br>ele: 376.242<br>time: 2016-02-06T18:21:56Z<br>magvar: <br>geoidheight: <br>cmt: 762<br>desc: 762]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>23.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.69736</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.049628</value>
+        </Data>
+        <Data name="ele">
+          <value>376.242065</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T18:21:56Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>762</value>
+        </Data>
+        <Data name="desc">
+          <value>762</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.049628,34.69736,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>763.0</name>
+      <description><![CDATA[ID: 24<br>lat: 34.69867696<br>lon: -120.051568<br>ele: 359.549<br>time: 2016-02-06T18:17:11Z<br>magvar: <br>geoidheight: <br>cmt: 763<br>desc: 763]]></description>
+      <styleUrl>#icon-503-CDDC39</styleUrl>
+      <ExtendedData>
+        <Data name="ID">
+          <value>24.0</value>
+        </Data>
+        <Data name="lat">
+          <value>34.69867696</value>
+        </Data>
+        <Data name="lon">
+          <value>-120.051568</value>
+        </Data>
+        <Data name="ele">
+          <value>359.549438</value>
+        </Data>
+        <Data name="time">
+          <value>2016-02-06T18:17:11Z</value>
+        </Data>
+        <Data name="magvar">
+          <value/>
+        </Data>
+        <Data name="geoidheight">
+          <value/>
+        </Data>
+        <Data name="cmt">
+          <value>763</value>
+        </Data>
+        <Data name="desc">
+          <value>763</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -120.051568,34.69867696,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
