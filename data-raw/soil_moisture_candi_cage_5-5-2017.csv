@@ -1,0 +1,17 @@
+tin_id,sample_id,tarped_area,bare,under_tarp,depth,note,wet_weight_with_tin,dry_weight_with_tin,tin_weight
+1,upper trait plot shallow,yes,no,no,shallow,Above 158  < 5 cm ,69.55,67.17,2.13
+2,under tarp deep,yes,yes,yes,deep,under tarp next to 158 20 cm deep,88.51,68.47,2.13
+3,Plot 158 shallow,yes,yes,no,shallow,158 < 5 cm,81.09,77.69,2.13
+4,above candi cage plots deep,no,no,no,deep,above candi cage plots 20 cm,88.8,71.15,2.13
+5,Plot 39 shallow,yes,yes,no,shallow,Plot 39 < 5 cm ,60.76,58.41,2.13
+6,upper candi cage shallow,no,no,no,shallow,,67.35,59.6,2.13
+7,lower trait plot shallow,yes,no,no,shallow,,60.05,57.61,2.13
+8,upper trait plot shallow,yes,no,no,shallow,above plot 39,59.32,56.21,2.13
+9,Plot 39 deep,yes,yes,no,deep,Deep 20 cm ,67.24,51.9,2.13
+10,Plot 205 shallow,yes,yes,no,shallow,,61.24,57.88,2.13
+11,below candi cage plots shallow ,no,no,no,shallow,Shallow < 5 cm ,75.95,72.17,2.13
+12,below candi cage plots deep,no,no,no,deep,Deep 20 cm ,64.36,53.33,2.13
+13,under tarp shallow,yes,yes,yes,shallow,under tarp next to 158 shallow,74.41,70.96,2.13
+14,Plot 158 deep,yes,yes,no,deep,158 20 cm ,83.13,65.87,2.13
+15,upper candi cage shallow rep 2,no,no,no,shallow,Rep 2  5 cm ,58.43,51.55,2.13
+16,Plot 205 shallow rep 2 ,yes,yes,no,shallow,Rep 2  5 cm ,49.26,46.58,2.13
