@@ -2,8 +2,9 @@ rm(list = ls())
 library(tidyverse)
 
 stat_weather <- read_csv('data-raw/daily_weather_2015_to_2016.csv')
+record <- read_csv('data-raw/2018_iButtons/2018_iButton_record.csv')
 
-fls <- dir('data-raw/2016_iButtons/clean/', '.csv$', full.names = T)
+fls <- dir('data-raw/2018_iButtons/clean/', '.csv$', full.names = T)
 
 ib <- lapply(fls, read_csv)
 
@@ -12,6 +13,12 @@ ib_all <- do.call(rbind, ib)
 ib_all$date <- as.Date( strptime( ib_all$date, '%m-%d-%y') )
 
 ib_all$date <- as.Date( ib_all$date )
+
+ib_all <-
+  ib_all %>%
+  rename( 'iButton' = plot_id) %>%
+  left_join(record ) %>%
+  select( -iButton, -retrieved)
 
 
 ib_daily <-
@@ -47,8 +54,7 @@ monthly_temps <-
   group_by( month, plot_id ) %>%
   summarise( Tmax = mean(Tmax), Tmin  = mean(Tmin))
 
-write_csv(monthly_temps, 'data-raw/monthly_plot_temps.csv')
-
+#write_csv(monthly_temps, 'data-raw/monthly_plot_temps.csv')
 
 ggplot(ib_daily, aes( x = date, y = plot_anom_Tmin, color = factor(plot_id))) +
   geom_line() +
