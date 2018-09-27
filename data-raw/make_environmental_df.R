@@ -1,13 +1,15 @@
 rm(list = ls())
 library(tidyverse)
 library(stringr)
-# make environmental dataframe
+
+outfile <- 'data-raw/all_environmental_data.csv'
 
 soil_depth <- read_csv('data-raw/soil_depths.csv')
 hummocks <- read_csv('data-raw/hummock.csv')
 env <- read_csv('data-raw/environmental_data.csv')
 temps <- read_csv('data-raw/monthly_plot_temps.csv')
 locs <- read_csv('data-raw/plot_locations.csv')
+light <- read_csv('data-raw/clean_light_data_2017-05-05.csv')
 
 locs$type <- NA
 locs$type[ locs$name < 756 ] <- 'upper'
@@ -55,6 +57,7 @@ soil <-
 
 #  merge data ----------------------------------------------------------------------- #
 df <- left_join(locs, temps )
+
 plot( df$ele, df$Tmax)
 plot( df$ele, df$Tmin)
 
@@ -67,4 +70,15 @@ df <- left_join(df, hummocks)
 
 df <- left_join( df, plot_depths)
 
-write_csv(df, 'data-raw/all_environmental_data.csv')
+light <-
+  light %>%
+  rename( 'light_above' = above,
+          'light_below' = below)
+
+df <-
+  df %>%
+  rename('site' = plot)
+
+sedgwickenv <- left_join(df, light, by = 'site')
+
+devtools::use_data(sedgwickenv, overwrite = T)
