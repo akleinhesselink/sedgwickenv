@@ -53,7 +53,10 @@ env <-
 
 soil <-
   env %>%
-  select(plot, organic_matter_ENR, pH, CEC_meq_100g, K_ppm, Mg_ppm, Ca_ppm, NH4_N, Nitrate_ppm, soil_moisture, `Sand_%`, `Clay_%` )
+  select(plot, organic_matter_ENR, pH, CEC_meq_100g, K_ppm, Mg_ppm, Ca_ppm, NH4_N, Nitrate_ppm, soil_moisture, `Sand_%`, `Clay_%` ) %>%
+  mutate( Ca_ppm = as.numeric(str_extract(Ca_ppm, '\\d+'))) %>%
+  mutate( Mg_ppm = as.numeric(str_extract(Mg_ppm, '\\d+'))) %>%
+  mutate( K_ppm = as.numeric(str_extract(K_ppm, '\\d+')))
 
 #  merge data ----------------------------------------------------------------------- #
 df <- left_join(locs, temps )
