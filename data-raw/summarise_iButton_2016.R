@@ -18,8 +18,9 @@ ib_daily <-
   group_by(plot_id, date, doy) %>%
   summarise(Tmin = min(value), Tmax = max(value), n = n()) %>%
   filter( n == 12 ) %>%
-  filter( doy < 175) %>%
+  #filter( doy < 175) %>%
   mutate( range = Tmax - Tmin , Tave = (Tmin + Tmax)/2)
+
 
 #
 stat_weather$date <- as.Date(strptime( stat_weather$date, '%Y-%m-%d'))

@@ -80,8 +80,10 @@ light <-
 
 df <-
   df %>%
-  rename('site' = plot)
+  rename('site' = plot) %>%
+  mutate('site_name' = as.numeric(factor(site))) %>%
+  select( site, site_name, lat:depth)
 
 sedgwickenv <- left_join(df, light, by = 'site')
 
-devtools::use_data(sedgwickenv, overwrite = T)
+usethis::use_data(sedgwickenv, overwrite = T)

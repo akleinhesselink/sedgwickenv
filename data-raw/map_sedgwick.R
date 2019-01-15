@@ -1,50 +1,91 @@
 rm(list = ls())
 library(raster)
 library(tidyverse)
+library(sf)
+library(ggmap)
 
 DEM <- raster('data-raw/DEM/grdn35w121_13/w001001.adf')
-plot_locations <- read.csv('data-raw/plot_locations.csv')
+boundary <- st_read('data-raw/gis_files/sedgwick_outline.kml')
 
-plot_locations <-
-  plot_locations %>%
-  dplyr::select( name, lat, lon, ele)
+boundary_polygon<-
+  st_combine(boundary$geometry) %>%
+  st_polygonize()%>%
+  sf::as_Spatial()
 
-e <- extent(x = c( range(plot_locations$lon), range(plot_locations$lat)))
+# first crop by extent then use mask #####
+r2 <- crop(DEM, extent(boundary_polygon)+0.01) ###+0.01 make white space around the raster
+r3 <- mask(r2, boundary_polygon)
 
-DEM <- crop(DEM, e*1.1)
+### read location ######
+locations <- read_csv('data-raw/plot_locations.csv')
+locations <- st_as_sf(locations, coords = c("x", "y"), crs = 4326, agr = "constant")
+locations <-
+  locations %>%
+  dplyr::select( name, lat, lon, ele) %>%
+  mutate( group = ifelse ( lat > 34.72 , 'upper', 'lower'))
 
-plot(DEM)
-contour(DEM, add = T)
-points(plot_locations$lon, plot_locations$lat, pch = 19)
+# --------------------------
+plot(r3)
+plot(boundary_polygon, add = T)
+contour(r3, add = T, lwd = 0.1)
+plot(locations,  add = T, pch = 19, color = 'black')
 
-plot_locations <-
-  plot_locations %>%
-  mutate( group =  ifelse ( lat < 34.72, 'lower', 'upper') )
+label_adj <-
+  data.frame( name = c(756:763),
+            lat_adj = c(0.003,
+                        -0.003,
+                        0.002,
+                        -0.002,
+                        0.003,
+                        -0.003,
+                        0.003,
+                        -0.003),
+            lon_adj = c(0.004,
+                         0.004,
+                         -0.005,
+                         -0.005,
+                         0.004,
+                         0.004,
+                         -0.006,
+                         0.006))
 
-upper <- subset(plot_locations , group == 'upper')
-lower <- subset(plot_locations, group == 'lower')
 
-e_upper <- extent( x = c(min(upper$lon), max(upper$lon), min(upper$lat), max(upper$lat) ) )
-DEM_upper <- crop(DEM, e_upper*1.1)
+my_labels <-
+  left_join(locations, label_adj) %>%
+  mutate( lat_lab = lat + lat_adj ,
+          lon_lab = lon + lon_adj,
+          label = as.numeric(factor(name)))
 
-e_lower <- extent(x = c(min(lower$lon), max(lower$lon), min(lower$lat), max(lower$lat)))
-DEM_lower <- crop(DEM, e_lower*1.1)
+text(my_labels$lon_lab, my_labels$lat_lab, label = my_labels$label)
 
-plot(DEM_upper)
-contour(DEM_upper, add = T)
-points(upper$lon, upper$lat, pch = 19)
+upper_box <-
+  locations %>%
+  filter( group == 'upper') %>%
+  summarise( x1 = min(lon) - 0.001,
+             x2 = max(lon) + 0.001,
+             y1 = min(lat) - 0.001,
+             y2 = max(lat) + 0.001 ) %>%
+  data.frame() %>%
+  select(-geometry)
 
-plot(DEM_lower)
-contour(DEM_lower, add = T)
-points(lower$lon, lower$lat, pch = 19)
 
-plot(DEM)
-contour(DEM, add = T, nlevels = 5)
-points(plot_locations$lon, plot_locations$lat, pch = 19)
+upper_box_extent <- extent( as.numeric( upper_box)  )
 
-X <- plot_locations
-coordinates(X) <- c('lon', 'lat')
+rect(xleft = upper_box$x1,
+     xright = upper_box$x2,
+     ybottom = upper_box$y1,
+     ytop = upper_box$y2)
 
-X$elevation <- raster::extract(DEM, X)
+text( upper_box$x2 + 0.004, upper_box$y2 + 0.002, 'Upper Sites', cex = 1)
+title(main = 'Sampling Sites\nSedgwick Reserve, CA, USA')
+
+r_upper <- crop( r3, upper_box_extent )
+plot(r_upper)
+contour(r_upper, add = T)
+plot(locations, add = T, color = 'black', pch = 19)
+
+
+
+
 
 

@@ -34,17 +34,21 @@ light <-
   group_by(site, notes) %>%
   mutate( position = ifelse(row_number() %% 2 == 0, 'below', 'above'))
 
+
+# Some data edits
+
 light <-
   light %>%
   ungroup() %>%
-  mutate( position = ifelse( site == '741' & value < 1000 , 'below', position )) %>%
+  mutate( position = ifelse( site == '741' & value < 1000 ,
+                             'below',
+                             position )) %>%
   mutate( site = ifelse( site == '752' & is.na(notes), '753', site )) %>%
   mutate( site = ifelse( site == 'NEB', '762', site)) %>%
   mutate( site = ifelse( site == '750' & date > '2017-05-05', '760', site)) %>%
   mutate( site = ifelse( site == '751' & date > '2017-05-05', '761', site)) %>%
-  filter( !(site == 759 & notes == 'OAK'), !(site == 762 & is.na(notes)))
-
-
+  filter( !(site == 759 & !is.na(notes)),
+          !(site == 762 & is.na(notes)))
 
 light <-
   light %>%
