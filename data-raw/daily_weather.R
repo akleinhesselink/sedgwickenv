@@ -5,6 +5,8 @@ library(stringr)
 # station data downloaded from: https://wrcc.dri.edu/cgi-bin/rawMAIN.pl?caucse
 
 outfile <- 'data-raw/daily_weather.csv'
+
+# ------------ Read in and process data ----------------- #
 field_names <- c('date', 'year', 'doy', 'dor', 'solar_kW-hr/m2', 'wind_speed_m/s', 'wind_dir_deg.', 'speed_gust_m/s', 'tavg_C', 'tmax_C', 'tmin_C', 'RH_avg', 'RH_max', 'RH_min', 'Penman_ET_mm', 'growing_deg_days_40', 'growing_deg_days_50', 'soil_moisture_avg', 'soil_moisture_max', 'soil_moisture_min', 'precip_mm')
 
 weather <- read_lines('data-raw/daily_weather_2016_to_2018.txt', skip = 6)
@@ -19,7 +21,10 @@ weather[ weather == -9999 ]  <- NA
 
 weather <-
   weather %>%
-  mutate( date = as.Date(date, '%m/%d/%Y'))
+  mutate( date = as.character(date)) %>%
+  mutate( date = mdy(date))
+
+# -------- Check values ---------------------- #
 
 weather %>%
   ggplot( aes( x = date, y = Penman_ET_mm)) +
@@ -45,5 +50,6 @@ weather %>%
 weather <-
   weather %>%
   mutate( doy = str_pad(doy, width = 3, side = 'left', pad = '0'))
+
 
 write_csv(weather, outfile)

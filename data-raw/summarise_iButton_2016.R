@@ -2,15 +2,10 @@ rm(list = ls())
 library(tidyverse)
 
 stat_weather <- read_csv('data-raw/daily_weather.csv')
-
 fls <- dir('data-raw/2016_iButtons/clean/', '.csv$', full.names = T)
-
 ib <- lapply(fls, read_csv)
-
 ib_all <- do.call(rbind, ib)
-
 ib_all$date <- as.Date( strptime( ib_all$date, '%m-%d-%y') )
-
 ib_all$date <- as.Date( ib_all$date )
 
 ib_daily <-
@@ -28,7 +23,7 @@ stat_weather$year <- as.numeric(stat_weather$year)
 
 stat_weather <-
   stat_weather %>%
-  select(date, doy, tmax_C, tmin_C, tavg_C)
+  dplyr::select(date, doy, tmax_C, tmin_C, tavg_C)
 
 #
 ib_daily <- merge( ib_daily %>% ungroup(), stat_weather, by = c('date', 'doy'))
