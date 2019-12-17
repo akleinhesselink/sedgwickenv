@@ -66,7 +66,7 @@ upper_box <-
              y1 = min(lat) - 0.001,
              y2 = max(lat) + 0.001 ) %>%
   data.frame() %>%
-  select(-geometry)
+  dplyr::select(-geometry)
 
 
 upper_box_extent <- extent( as.numeric( upper_box)  )
