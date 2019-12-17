@@ -34,12 +34,12 @@ ib_2016 <-
   mutate( daily_range = Tmax - Tmin , Tavg = (Tmin + Tmax)/2)
 
 # ------------- bind together ------- #
-ibutton <-
+sedgwick_ibutton <-
   ib_2016 %>%
   bind_rows(ib_2018) %>%
     dplyr::select(site, date, doy, Tmin, Tmax, Tavg, daily_range)
 
-usethis::use_data(ibutton, overwrite = T)
+usethis::use_data(sedgwick_ibutton, overwrite = T)
 
 # ------- save monthly averages env dataframe ----- #
 

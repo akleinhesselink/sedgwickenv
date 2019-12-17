@@ -40,7 +40,7 @@ april_2017_gwc <-
   dplyr::select( plot, gwc) %>%
   mutate( date = as.Date('2017-04-15'))
 
-all_soil_moisture <-
+new_soil_moisture <-
   bind_rows( jan_2018_gwc, april_2017_gwc )  %>%
   rename( 'site' = plot ) %>%
   mutate( site = as.numeric(site)) %>%
@@ -59,13 +59,13 @@ spring_2016_soil_moisture <-
   group_by(site, date ) %>%
   summarise( GWC = mean( value ))
 
-soil_moisture <-
-  bind_rows(all_soil_moisture,
+sedgwick_soil_moisture <-
+  bind_rows(new_soil_moisture,
           spring_2016_soil_moisture)
 
 
 # Save soil moisture to add to the full environment dataframe
-soil_moisture %>%
+sedgwick_soil_moisture %>%
   mutate( month = month.abb[ month(date) ] , year = year( date ) ) %>%
   mutate( bout = paste( month, year, 'GWC', sep = '_')) %>%
   dplyr::select( -date, -month, -year ) %>%
@@ -73,6 +73,6 @@ soil_moisture %>%
   saveRDS('data-raw/site_soil_moisture.rds')
 
 
-usethis::use_data(soil_moisture, overwrite = T)
+usethis::use_data(sedgwick_soil_moisture, overwrite = T)
 
 

@@ -70,8 +70,8 @@ df <-
   left_join(site_soil_depth, by = 'site') %>%
   left_join(moisture, by = 'site')
 
-sedgwickenv <-
+sedgwick_env <-
   df %>%
   dplyr::select( site, lon, lat, ele, name, type, microsite, Tmax:`Clay_%`, Jan_2018_GWC, Apr_2016_GWC, Apr_2017_GWC, May_2016_GWC, soil_depth_cm, soil_depth_sd, light_above, light_below, light_use)
 
-usethis::use_data(sedgwickenv, overwrite = T)
+usethis::use_data(sedgwick_env, overwrite = T)
