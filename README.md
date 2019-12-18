@@ -12,6 +12,12 @@ of California Sedgwick Reserve in Santa Barbara CA, USA. Data were
 collected by Nathan Kraft, Gaurav Kandlikar, Andrew Kleinhesselink and
 the Kraft Lab.
 
+![Map of 24 Sites](man/figures/README-sedgwick_map.png) **Sedgwick
+Map:** A) Map of all 24 sites across the reserve–only the lower sites
+are labeled. Sites labeled 740 to 763. B) Inset showing locations of
+upper sites.
+<!--sites mapped with the data-raw/map_sedgwick_ggmap.R script -->
+
 ## Installation
 
 You can install this package from [GitHub](https://github.com/) with:
