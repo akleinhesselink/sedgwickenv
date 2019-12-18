@@ -38,3 +38,9 @@ rsconnect/
 
 # Temporary R data 
 data-raw/*.rds 
+
+# Large Spatial data 
+data-raw/DEM/*
+data-raw/gis_files/*
+
+# Other
