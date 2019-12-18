@@ -1,118 +1,44 @@
 ---
 output: github_document
 ---
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README-"
+  fig.path = "man/figures/README-",
+  out.width = "100%"
 )
 ```
 
-# sedgwickenv 
+# sedgwickenv
 
-# <!-- badges: start -->
-# [![CRAN status](https://www.r-pkg.org/badges/version/tidyverse)](https://cran.r-project.org/package=tidyverse)
-# [![Travis build status](https://travis-ci.org/tidyverse/tidyverse.svg?branch=master)](https://travis-ci.org/tidyverse/tidyverse)
-# [![Codecov test coverage](https://codecov.io/gh/tidyverse/tidyverse/branch/master/graph/badge.svg)](https://codecov.io/gh/tidyverse/tidyverse?branch=master)
-# <!-- badges: end -->
+<!-- badges: start -->
+<!-- badges: end -->
 
-## Overview
+Load environmental data for 24 vegetation sampling plots at University of California Sedgwick Reserve in Santa Barbara CA, USA. Data were collected by Nathan Kraft, Gaurav Kandlikar, Andrew Kleinhesselink and the Kraft Lab.     
 
-The tidyverse is a set of packages that work in harmony because they share common data representations and API design. The __tidyverse__ package is designed to make it easy to install and load core packages from the tidyverse in a single command.
-
-If you'd like to learn how to use the tidyverse effectively, the best place to start is [R for data science](http://r4ds.had.co.nz).
 
 ## Installation
 
-```{r eval = FALSE}
-# Install from CRAN
-install.packages("tidyverse")
-# Or the development version from GitHub
+You can install this package from [GitHub](https://github.com/) with:
+
+``` r
 # install.packages("devtools")
-devtools::install_github("tidyverse/tidyverse")
+devtools::install_github("akleinhesselink/sedgwickenv")
 ```
 
 ## Usage
 
-`library(tidyverse)` will load the core tidyverse packages: 
+`library(sedgwickenv)` will load the following datasets:
 
-* [ggplot2](https://ggplot2.tidyverse.org), for data visualisation.
-* [dplyr](https://dplyr.tidyverse.org), for data manipulation.
-* [tidyr](https://tidyr.tidyverse.org), for data tidying.
-* [readr](https://readr.tidyverse.org), for data import.
-* [purrr](https://purrr.tidyverse.org), for functional programming.
-* [tibble](https://tibble.tidyverse.org), for tibbles, a modern re-imagining of data frames.
-* [stringr](https://github.com/tidyverse/stringr), for strings.
-* [forcats](https://github.com/hadley/forcats), for factors.
+* __sedgwick_env__: dataframe with average environmental conditions at all 24 sites 
+* __sedgwick_ibutton__: daily Tmax, Tmin and Tavg spring temperatures at 24 sites 
+* __sedgwick_soil_moisture__: spring soil moisture recorded at each of the 24 sites 
+* __sedgwick_boundary__: SpatialPolygon file showing boundaries of Sedgwick for maps 
+* __sedgwick_DEM__: raster showing elevation across Sedgwick at roughly 10 m resolution 
+* __sedgwick_soil_depth__: soil depth recorded at each plot at each site 
 
-You also get a condensed summary of conflicts with other packages you have loaded:
 
-```{r example}
-library(tidyverse)
-```
-
-You can see conflicts created later with `tidyverse_conflicts()`:
-
-```{r conflicts}
-library(MASS)
-tidyverse_conflicts()
-```
-
-And you can check that all tidyverse packages are up-to-date with `tidyverse_update()`:
-
-```{r update, eval = FALSE}
-tidyverse_update()
-#> The following packages are out of date:
-#>  * broom (0.4.0 -> 0.4.1)
-#>  * DBI   (0.4.1 -> 0.5)
-#>  * Rcpp  (0.12.6 -> 0.12.7)
-#> Update now?
-#> 
-#> 1: Yes
-#> 2: No
-```
-
-## Packages
-
-As well as the core tidyverse, installing this package also installs a selection of other packages that you're likely to use frequently, but probably not in every analysis. This includes packages for:
-
-*   Working with specific types of vectors:
-
-    * [hms](https://github.com/rstats-db/hms), for times.
-    * [lubridate](https://github.com/tidyverse/lubridate), for date/times.
-    
-*   Importing other types of data:
-
-    * [feather](https://github.com/wesm/feather), for sharing with Python and other languages.
-    * [haven](https://github.com/tidyverse/haven), for SPSS, SAS and Stata files.
-    * [httr](https://github.com/r-lib/httr), for web apis.
-    * [jsonlite](https://github.com/jeroen/jsonlite) for JSON.
-    * [readxl](https://github.com/tidyverse/readxl), for `.xls` and `.xlsx` files.
-    * [rvest](https://github.com/tidyverse/rvest), for web scraping.
-    * [xml2](https://github.com/r-lib/xml2), for XML.
-
-*   Modelling
-
-    * [modelr](https://github.com/tidyverse/modelr), for modelling within a pipeline
-    * [broom](https://github.com/tidymodels/broom), for turning models into 
-      tidy data
-
-## Code of Conduct
-
-Please note that the tidyverse project is released with a [Contributor Code of Conduct](https://tidyverse.tidyverse.org/CODE_OF_CONDUCT.html). 
-By contributing to this project, you agree to abide by its terms.
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
