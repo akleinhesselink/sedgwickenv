@@ -7,10 +7,17 @@
 
 <!-- badges: end -->
 
-Load environmental data for 24 vegetation sampling plots at University
-of California Sedgwick Reserve in Santa Barbara CA, USA. Data were
-collected by Nathan Kraft, Gaurav Kandlikar, Andrew Kleinhesselink and
-the Kraft Lab.
+![Sedgwick Image](man/figures/IMG_1612.JPG) **A view from the serpentine
+habitats at Sedgwick**
+
+## Overview:
+
+This is an R data package with environmental characteristics of 24 study
+sites located across the [University of California Sedgwick
+Reserve](https://sedgwick.nrs.ucsb.edu/) in Santa Barbara County,
+California. Data were collected by Nathan Kraft, Gaurav Kandlikar,
+Andrew Kleinhesselink and the [Kraft Lab at
+UCLA](https://sites.lifesci.ucla.edu/eeb-kraft/).
 
 ![Map of 24 Sites](man/figures/README-sedgwick_map.png) **Sedgwick
 Map:** A) Map of all 24 sites across the reserve–only the lower sites
