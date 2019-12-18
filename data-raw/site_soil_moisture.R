@@ -61,8 +61,9 @@ spring_2016_soil_moisture <-
 
 sedgwick_soil_moisture <-
   bind_rows(new_soil_moisture,
-          spring_2016_soil_moisture)
-
+          spring_2016_soil_moisture) %>%
+  ungroup() %>%
+  as.data.frame()
 
 # Save soil moisture to add to the full environment dataframe
 sedgwick_soil_moisture %>%
@@ -70,8 +71,9 @@ sedgwick_soil_moisture %>%
   mutate( bout = paste( month, year, 'GWC', sep = '_')) %>%
   dplyr::select( -date, -month, -year ) %>%
   spread( bout, GWC ) %>%
+  ungroup() %>%
+  as.data.frame() %>%
   saveRDS('data-raw/site_soil_moisture.rds')
-
 
 usethis::use_data(sedgwick_soil_moisture, overwrite = T)
 

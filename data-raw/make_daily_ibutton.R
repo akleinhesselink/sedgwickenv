@@ -37,13 +37,14 @@ ib_2016 <-
 sedgwick_ibutton <-
   ib_2016 %>%
   bind_rows(ib_2018) %>%
-    dplyr::select(site, date, doy, Tmin, Tmax, Tavg, daily_range)
+    dplyr::select(site, date, doy, Tmin, Tmax, Tavg, daily_range) %>%
+  ungroup() %>%
+  as.data.frame()
 
 usethis::use_data(sedgwick_ibutton, overwrite = T)
 
 # ------- save monthly averages env dataframe ----- #
-
-ibutton %>%
+sedgwick_ibutton %>%
   mutate( month = month(date), year = year(date)) %>%
   group_by( site, month) %>%
   summarise( Tmax = mean(Tmax), Tmin  = mean(Tmin), ibutton_days = n())  %>%
