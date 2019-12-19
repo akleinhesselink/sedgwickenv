@@ -48,5 +48,6 @@ devtools::install_github("akleinhesselink/sedgwickenv")
 * __sedgwick_boundary__: SpatialPolygon file showing boundaries of Sedgwick for maps 
 * __sedgwick_DEM__: raster showing elevation across Sedgwick at roughly 10 m resolution 
 * __sedgwick_soil_depth__: soil depth recorded at each plot at each site 
+* __sedgwick_veg_height__: vegetation height recorded at each plot at each site
 
 

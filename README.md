@@ -50,3 +50,5 @@ devtools::install_github("akleinhesselink/sedgwickenv")
     roughly 10 m resolution
   - **sedgwick\_soil\_depth**: soil depth recorded at each plot at each
     site
+  - **sedgwick\_veg\_height**: vegetation height recorded at each plot
+    at each site

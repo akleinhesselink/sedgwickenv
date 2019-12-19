@@ -94,7 +94,7 @@
 #'   \item{site}{Site code based on original site number used by G.K. and N.K.}
 #'   \item{plot}{Plot number at each site (1-5)}
 #'   \item{rep}{Two sampling locations located at opposite corners of each plot}
-#'   \item{depth_cm}{maximum depth (cm)}
+#'   \item{depth}{maximum depth (cm)}
 #' }
 "sedgwick_soil_depth"
 
@@ -114,3 +114,16 @@
 #' }
 "sedgwick_soil_moisture"
 
+#' Vegetation height at each of the 24 sites.
+#'
+#' Vegetation height was recorded in two places in each plot at each site.  Height was
+#' determined by dropping a ruler in two opposite corners of the plot and recording
+#' the height of the vegetation nearest to the ruler.
+#'
+#' @format A dataframe with 240 rows and 4 variables
+#' \describe{
+#'   \item{site}{Site code based on original site number used by G.K. and N.K.}
+#'   \item{plot}{Plot number at each site (1-5)}
+#'   \item{veg_height}{maximum vegetation height (cm)}
+#' }
+"sedgwick_veg_height"

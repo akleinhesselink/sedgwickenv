@@ -9,7 +9,7 @@
   \item{site}{Site code based on original site number used by G.K. and N.K.}
   \item{plot}{Plot number at each site (1-5)}
   \item{rep}{Two sampling locations located at opposite corners of each plot}
-  \item{depth_cm}{maximum depth (cm)}
+  \item{depth}{maximum depth (cm)}
 }}
 \usage{
 sedgwick_soil_depth

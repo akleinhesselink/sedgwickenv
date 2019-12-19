@@ -12,6 +12,7 @@ light <- read_csv('data-raw/clean_light_data_2017-05-05.csv')
 moisture <- readRDS('data-raw/site_soil_moisture.rds')
 temps <- readRDS('data-raw/monthly_plot_temps.rds')
 soil_depth <- readRDS('data-raw/site_soil_depth.rds')
+veg_height <- readRDS('data-raw/site_veg_heights.rds')
 
 locs$type <- NA
 locs$type[ locs$name < 756 ] <- 'upper'
@@ -65,6 +66,7 @@ df <-
   left_join(light, by = 'site') %>%
   left_join(soil_depth, by = 'site') %>%
   left_join(moisture, by = 'site') %>%
+  left_join(veg_height, by = 'site') %>%
   group_by( site ) %>%
   mutate( avg_soil_moisture = (Apr_2016_GWC + Apr_2017_GWC + May_2016_GWC)/3 )
 

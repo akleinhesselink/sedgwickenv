@@ -10,7 +10,7 @@ sedgwick_soil_depth <-
   rename( 'site' = 'plot',
           'plot' = 'subplot') %>%
   pivot_longer(d1:d2, 'rep', values_to = 'depth') %>%
-  mutate( plot = ifelse (site > 755, 6 - plot, plot )) %>%
+  mutate( plot = ifelse ((site > 755) & site != 762, 6 - plot, plot )) %>%
   ungroup() %>%
   as.data.frame()
 
